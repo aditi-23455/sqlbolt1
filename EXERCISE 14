@@ -1,0 +1,18 @@
+EXERCISE 14
+QUESTIONS 1=The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+          2=The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+          3=Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+  SOLUTIONS NO=1
+UPDATE movies
+SET director = "John Lasseter"
+WHERE id = 2;
+
+  SOLUTION NO=2
+UPDATE movies
+SET year = 1999
+WHERE id = 3;
+
+  SOLUTION NO=3
+UPDATE movies
+SET title = "Toy Story 3", director = "Lee Unkrich"
+WHERE id = 11;
