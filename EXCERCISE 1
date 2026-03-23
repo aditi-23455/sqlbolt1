@@ -1,0 +1,14 @@
+EXCERCISE 1
+1=Find the title of each film ✓
+2=Find the director of each film
+3=Find the title and director of each film
+4=Find the title and year of each film
+5=Find all the information about each film
+SOLUTION
+1=SELECT TITLE FROM movies;
+2=SELECT DIRECTOR FROM movies;
+3=SELECT TITLE,DIRECTOR FROM movies;
+4=SELECT TITLE,YEAR FROM movies;
+5=SELECT * FROM movies;
+
+
