@@ -1,0 +1,31 @@
+EXCERCISE 11
+1. Find the number of Artists in the studio (without HAVING)
+SELECT COUNT(*) AS artist_count
+FROM employees
+WHERE role = 'Artist';
+
+ 2. Find the number of employees of each role
+SELECT role, COUNT(*) AS employee_count
+FROM employees
+GROUP BY role;
+
+3. Find the total number of years employed by all Engineers
+SELECT SUM(years_employed) AS total_years
+FROM employees
+WHERE role = 'Engineer';
+
+EXCERCISE 12
+ 1. Find the number of movies each director has directed
+SELECT director, COUNT(*) AS movie_count
+FROM movies
+GROUP BY director;
+
+
+ 2. Find the total domestic and international sales for each director
+SELECT m.director,
+       SUM(b.domestic_sales) AS total_domestic_sales,
+       SUM(b.international_sales) AS total_international_sales
+FROM movies m
+JOIN boxoffice b
+ON m.id = b.movie_id
+GROUP BY m.director;
